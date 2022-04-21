@@ -1,0 +1,22 @@
+
+<script>
+
+    $(function(){
+
+     $(window).scroll(function(){
+
+      var scroll=$(window).scrollTop();
+
+      if(scroll > 300){
+         $('nav').addClass('fixed-header');
+         $('nav div').addClass('visible-title');
+      }
+      else{
+         $('nav').removeClass('fixed-header');
+         $('nav div').removeClass('visible-title');
+
+      }
+     }
+    })
+
+</Script>
